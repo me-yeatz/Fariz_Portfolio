@@ -1,0 +1,17 @@
+{
+    "name": "Fariz Jefri Portfolio",
+    "short_name": "Fariz PF",
+    "description": "Muhammad Fariz Bin Jefri Portfolio System",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0a0a0a",
+    "theme_color": "#ff4d00",
+    "icons": [
+        {
+            "src": "/fariz_icon.png",
+            "sizes": "192x192 512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
