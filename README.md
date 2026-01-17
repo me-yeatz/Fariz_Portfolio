@@ -4,7 +4,7 @@
   <p align="center">
     <strong>A high-fidelity, interactive tech portfolio inspired by vintage VHS cassette aesthetics.</strong>
     <br />
-    <em>Developed by Fariz Jefri</em>
+    <em>Developed by me-yeatz</em>
   </p>
 </div>
 
@@ -12,7 +12,7 @@
 
 ## 🚀 Overview
 
-This project is a custom-engineered web application showcasing a professional journey ranging from **Customer Service Excellence** to **Entrepreneurship** and **Cabin Crew Operations**. The design philosophy blends 1990s analog aesthetics with modern React performance.
+This project is a custom-engineered web application showcasing a portfolio journey ranging from **Customer Service Excellence** to **Entrepreneurship** and **Cabin Crew Operations**. The design philosophy blends 1990s analog aesthetics with modern React performance.
 
 ### 📼 Key Features
 
