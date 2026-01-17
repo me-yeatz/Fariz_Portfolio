@@ -1,8 +1,6 @@
 # 📟 MFJ_SYSTEM_v4.0 | Interactive VHS Tech Portfolio
 
 <div align="center">
-  <img width="1200" alt="Fariz Jefri Portfolio" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-  <br />
   <p align="center">
     <strong>A high-fidelity, interactive tech portfolio inspired by vintage VHS cassette aesthetics.</strong>
     <br />

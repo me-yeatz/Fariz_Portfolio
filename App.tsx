@@ -136,46 +136,42 @@ const App: React.FC = () => {
       <div className="vhs-container w-full h-full md:w-[96vw] md:h-[94vh] flex flex-col md:flex-row shadow-2xl relative overflow-hidden">
 
         {/* Left Section: Cassette Mechanical Detail */}
-        <div className="hidden lg:flex w-1/4 bg-[#141414] p-10 flex-col justify-between border-r border-[#2a2a2a] relative">
+        <div className="hidden lg:flex w-64 bg-[#141414] p-8 flex-col justify-between border-r border-[#2a2a2a] relative shrink-0">
           <div className="flex justify-between items-start">
             <div className="space-y-2">
-              <div className="w-5 h-5 rounded-full vhs-bg-orange shadow-[0_0_15px_#ff4d00]"></div>
+              <div className="w-4 h-4 rounded-full vhs-bg-orange shadow-[0_0_15px_#ff4d00]"></div>
               <div className="mono text-[10px] text-zinc-600 font-bold uppercase">REC</div>
             </div>
             <div className="mono text-[10px] text-zinc-500 uppercase tracking-widest text-right leading-relaxed">
-              SIGNAL: STABLE<br />LOAD: NOMINAL<br />PWR: 100%
+              SIGNAL: STABLE<br />PWR: 100%
             </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center flex-grow space-y-20 py-10">
+          <div className="flex flex-col items-center justify-center flex-grow space-y-12 py-6">
             <div className="relative group">
-              <div className="w-48 h-48 rounded-full border-8 border-zinc-800 flex items-center justify-center bg-black/40 shadow-inner overflow-hidden">
-                <div className="w-40 h-40 rounded-full border-2 border-zinc-700/50 border-dashed animate-spin flex items-center justify-center" style={{ animationDuration: '20s' }}>
-                  <div className="w-10 h-1 bg-zinc-700"></div>
+              <div className="w-32 h-32 rounded-full border-4 border-zinc-800 flex items-center justify-center bg-black/40 shadow-inner overflow-hidden">
+                <div className="w-24 h-24 rounded-full border border-zinc-700/50 border-dashed animate-spin flex items-center justify-center" style={{ animationDuration: '20s' }}>
+                  <div className="w-6 h-1 bg-zinc-700"></div>
                 </div>
               </div>
-              <div className="absolute -bottom-6 w-full text-center mono text-[10px] text-zinc-600 font-bold uppercase">REEL_01</div>
+              <div className="absolute -bottom-4 w-full text-center mono text-[8px] text-zinc-600 font-bold uppercase">REEL_01</div>
             </div>
             <div className="relative group">
-              <div className="w-48 h-48 rounded-full border-8 border-zinc-800 flex items-center justify-center bg-black/40 shadow-inner overflow-hidden">
-                <div className="w-40 h-40 rounded-full border-2 border-zinc-700/50 border-dashed animate-spin flex items-center justify-center" style={{ animationDuration: '30s' }}>
-                  <div className="w-10 h-1 bg-zinc-700"></div>
+              <div className="w-32 h-32 rounded-full border-4 border-zinc-800 flex items-center justify-center bg-black/40 shadow-inner overflow-hidden">
+                <div className="w-24 h-24 rounded-full border border-zinc-700/50 border-dashed animate-spin flex items-center justify-center" style={{ animationDuration: '30s' }}>
+                  <div className="w-6 h-1 bg-zinc-700"></div>
                 </div>
               </div>
-              <div className="absolute -bottom-6 w-full text-center mono text-[10px] text-zinc-600 font-bold uppercase">REEL_02</div>
+              <div className="absolute -bottom-4 w-full text-center mono text-[8px] text-zinc-600 font-bold uppercase">REEL_02</div>
             </div>
           </div>
 
-          <div className="flex items-end gap-6">
-            <div className="vhs-vertical-text mono text-zinc-600 text-sm tracking-[0.8em] font-black py-4 uppercase border-r border-zinc-800 pr-4">
-              VIDEO HOME SYSTEM
+          <div className="flex items-end gap-4">
+            <div className="vhs-vertical-text mono text-zinc-600 text-[10px] tracking-[0.5em] font-black py-4 uppercase border-r border-zinc-800 pr-4">
+              VH_SYSTEM
             </div>
             <div className="flex-1 flex flex-col justify-end">
-              <div className="h-px bg-zinc-800 w-full mb-4"></div>
-              <div className="flex justify-between items-center">
-                <div className="w-4 h-4 bg-zinc-800 rotate-45"></div>
-                <div className="text-[10px] mono text-zinc-700 font-bold">MFJ_SYSTEM_v4.0</div>
-              </div>
+              <div className="text-[8px] mono text-zinc-700 font-bold">MFJ_v4.0</div>
             </div>
           </div>
         </div>
@@ -183,37 +179,17 @@ const App: React.FC = () => {
         {/* Right Section: The Label (Main Content) */}
         <div className="flex-1 vhs-label flex flex-col relative overflow-hidden">
 
-          <header className="p-4 md:p-8 border-b-[6px] border-black/10 flex flex-col md:flex-row justify-between items-start md:items-end gap-3 md:gap-6">
-            <div className="space-y-3 w-full md:w-auto">
-              <div className="flex items-center gap-4">
-                <div className="bg-orange-600 text-white px-3 py-1 md:px-5 md:py-2 text-[10px] md:text-sm font-black mono tracking-widest shadow-md">MFJ_CORP</div>
-                <div className="flex flex-col gap-1">
-                  <div className="h-1 vhs-bg-orange w-16 md:w-24"></div>
-                  <div className="h-1 vhs-bg-orange w-12 md:w-16"></div>
-                  <div className="h-1 vhs-bg-orange w-6 md:w-8"></div>
-                </div>
-              </div>
-              <div className="max-w-4xl">
-                <h1 className="text-2xl md:text-4xl lg:text-5xl font-black stencil leading-tight tracking-tighter uppercase mb-0 md:mb-4">
-                  {DATA.profile.modelNo}
-                </h1>
-                <div className="hidden md:block bg-black/5 p-4 border-l-4 border-orange-600">
-                  <p className="mono text-[11px] md:text-sm tracking-tight opacity-90 leading-relaxed font-bold">
-                    <span className="vhs-text-orange mr-2 uppercase">About me :</span>
-                    {DATA.profile.about}
-                  </p>
-                </div>
-              </div>
+          <header className="px-6 py-4 md:px-8 md:py-6 border-b-[6px] border-black/10 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="flex items-center gap-6 w-full md:w-auto">
+              <div className="bg-orange-600 text-white px-4 py-1.5 text-[10px] md:text-xs font-black mono tracking-widest shadow-md">MFJ_CORP</div>
+              <h1 className="text-xl md:text-3xl lg:text-4xl font-black stencil leading-none tracking-tighter uppercase whitespace-nowrap">
+                {DATA.profile.modelNo}
+              </h1>
             </div>
 
-            <div className="hidden md:flex w-full md:w-auto text-left md:text-right flex-col gap-2 shrink-0">
-              <div className="hidden md:flex justify-end gap-2 mb-4">
-                {[...Array(6)].map((_, i) => <div key={i} className="w-10 h-1.5 bg-black/15"></div>)}
-              </div>
-              <div className="mono text-xs font-black text-black/40 uppercase tracking-widest">UNIT SERIAL IDENTIFIER</div>
-              <div className="mono text-lg md:text-xl font-black bg-black/5 px-4 py-2 border-l-4 border-orange-600">
-                {DATA.profile.serialNo}
-              </div>
+            <div className="hidden md:flex gap-2 items-center">
+              {[...Array(8)].map((_, i) => <div key={i} className="w-6 h-1 bg-black/10"></div>)}
+              <div className="mono text-[10px] font-black text-black/30 uppercase ml-4">SYSTEM_READY</div>
             </div>
           </header>
 
@@ -261,13 +237,13 @@ const App: React.FC = () => {
                     </div>
 
                     <div className="space-y-4 mb-10">
-                      <div className="md:hidden bg-black/5 p-5 border-l-4 border-orange-600">
+                      <div className="bg-black/5 p-5 border-l-4 border-orange-600">
                         <div className="mono text-[10px] opacity-40 font-black mb-2 uppercase tracking-widest">ABOUT_MISSION</div>
                         <p className="mono text-sm tracking-tight opacity-90 leading-relaxed font-bold">
                           {DATA.profile.about}
                         </p>
                       </div>
-                      <div className="md:hidden bg-black/5 p-5 border-l-4 border-orange-600">
+                      <div className="bg-black/5 p-5 border-l-4 border-orange-600">
                         <div className="mono text-[10px] opacity-40 font-black mb-2 uppercase tracking-widest">UNIT_IDENTIFIER</div>
                         <p className="mono text-sm font-black uppercase tracking-widest">
                           {DATA.profile.serialNo}
@@ -412,26 +388,27 @@ const App: React.FC = () => {
             {activeSection === 'reference' && (
               <div className="max-w-4xl mx-auto space-y-12 animate-in fade-in slide-in-from-bottom-4 duration-500">
                 {DATA.references.map((ref, idx) => (
-                  <div key={idx} className="bg-[#141414] text-white p-10 md:p-16 relative overflow-hidden border-2 border-orange-600/30">
+                  <div key={idx} className="bg-[#141414] text-white p-12 md:p-20 relative overflow-hidden border-2 border-orange-600/30 text-center">
                     <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/grid.png')]"></div>
 
-                    <div className="relative z-10 flex flex-col md:flex-row gap-12 items-center">
-                      <div className="w-32 h-32 md:w-48 md:h-48 border-8 border-orange-600 p-2 shadow-[0_0_30px_rgba(255,77,0,0.2)]">
-                        <div className="w-full h-full bg-zinc-900 flex items-center justify-center relative">
-                          <User size={80} className="text-white/20" />
-                          <div className="absolute inset-0 border border-orange-600/50 m-1"></div>
-                        </div>
+                    <div className="relative z-10 space-y-8">
+                      <div className="inline-block mono text-[10px] md:text-xs vhs-text-orange font-black tracking-[0.5em] border border-orange-600 px-4 py-2 mb-4">
+                        AUTHORIZED_SUPERVISOR
                       </div>
-                      <div className="text-center md:text-left space-y-4">
-                        <div className="inline-block mono text-xs vhs-text-orange font-black tracking-[0.5em] border border-orange-600 px-3 py-1 mb-2">AUTHORIZED_SUPERVISOR</div>
-                        <h3 className="michroma text-3xl md:text-5xl font-black">{ref.name}</h3>
-                        <p className="mono text-sm opacity-60 uppercase font-bold tracking-widest">{ref.role}</p>
-                        <div className="flex flex-wrap justify-center md:justify-start gap-6 mt-8">
-                          <a href={`tel:${ref.phone.replace(/\s+/g, '')}`} className="group flex items-center gap-4 mono text-lg md:text-2xl border-2 border-white/20 px-8 py-4 hover:border-orange-600 hover:vhs-text-orange transition-all font-black bg-white/5">
-                            <Phone size={24} />
-                            {ref.phone}
-                          </a>
-                        </div>
+
+                      <div className="space-y-4">
+                        <h3 className="michroma text-4xl md:text-6xl font-black uppercase tracking-tight">{ref.name}</h3>
+                        <p className="mono text-sm md:text-lg opacity-60 uppercase font-bold tracking-[0.3em]">{ref.role}</p>
+                      </div>
+
+                      <div className="flex justify-center mt-12">
+                        <a
+                          href={`tel:${ref.phone.replace(/\s+/g, '')}`}
+                          className="group flex items-center gap-6 mono text-2xl md:text-4xl border-2 border-white/10 px-10 py-6 hover:border-orange-600 hover:vhs-text-orange transition-all font-black bg-white/5"
+                        >
+                          <Phone size={32} />
+                          {ref.phone}
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -446,9 +423,10 @@ const App: React.FC = () => {
                 <div key={i} className="w-2 h-2 rounded-full vhs-bg-orange animate-pulse" style={{ animationDelay: `${i * 0.2}s` }}></div>
               ))}
             </div>
-            <div className="mono text-[10px] md:text-xs font-black opacity-30 flex gap-8 uppercase tracking-[0.2em]">
+            <div className="mono text-[10px] md:text-xs font-black opacity-30 flex flex-wrap gap-x-8 gap-y-2 uppercase tracking-[0.1em] justify-end flex-1 px-4">
               <span className="hidden sm:inline">PAL_STANDARD_SYSTEM_ACTIVE</span>
               <span>EST_1999_FARIZ_REDACTED</span>
+              <span className="italic lowercase opacity-60">-create by yeatz2025</span>
             </div>
             <div className="w-12 h-6 border-2 border-black/15 flex items-center justify-center p-1">
               <div className="w-2 h-full vhs-bg-orange"></div>
