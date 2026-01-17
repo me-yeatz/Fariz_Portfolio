@@ -35,6 +35,18 @@ const DATA = {
   },
   experience: [
     {
+      period: "JAN 2026 - PRESENT",
+      role: "Cabin Crew",
+      company: "Air Asia",
+      location: "Kuala Lumpur International Airport 2"
+    },
+    {
+      period: "JAN 2025 - DEC 2025",
+      role: "Customer Service",
+      company: "ROYCE' Chocolate",
+      location: "One Utama Shopping Centre"
+    },
+    {
       period: "AUG 2023 - DEC 2024",
       role: "Entrepreneur | Art / Bakery",
       company: "Self-Employed",
@@ -171,21 +183,21 @@ const App: React.FC = () => {
         {/* Right Section: The Label (Main Content) */}
         <div className="flex-1 vhs-label flex flex-col relative overflow-hidden">
 
-          <header className="p-6 md:p-8 border-b-[6px] border-black/10 flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
-            <div className="space-y-4 w-full md:w-auto">
-              <div className="flex items-center gap-6">
-                <div className="bg-orange-600 text-white px-5 py-2 text-sm font-black mono tracking-widest shadow-md">MFJ_CORP</div>
-                <div className="flex flex-col gap-1.5">
-                  <div className="h-1.5 vhs-bg-orange w-24"></div>
-                  <div className="h-1.5 vhs-bg-orange w-16"></div>
-                  <div className="h-1.5 vhs-bg-orange w-8"></div>
+          <header className="p-4 md:p-8 border-b-[6px] border-black/10 flex flex-col md:flex-row justify-between items-start md:items-end gap-3 md:gap-6">
+            <div className="space-y-3 w-full md:w-auto">
+              <div className="flex items-center gap-4">
+                <div className="bg-orange-600 text-white px-3 py-1 md:px-5 md:py-2 text-[10px] md:text-sm font-black mono tracking-widest shadow-md">MFJ_CORP</div>
+                <div className="flex flex-col gap-1">
+                  <div className="h-1 vhs-bg-orange w-16 md:w-24"></div>
+                  <div className="h-1 vhs-bg-orange w-12 md:w-16"></div>
+                  <div className="h-1 vhs-bg-orange w-6 md:w-8"></div>
                 </div>
               </div>
               <div className="max-w-4xl">
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-black stencil leading-tight tracking-tighter uppercase mb-4">
+                <h1 className="text-2xl md:text-4xl lg:text-5xl font-black stencil leading-tight tracking-tighter uppercase mb-0 md:mb-4">
                   {DATA.profile.modelNo}
                 </h1>
-                <div className="bg-black/5 p-4 border-l-4 border-orange-600">
+                <div className="hidden md:block bg-black/5 p-4 border-l-4 border-orange-600">
                   <p className="mono text-[11px] md:text-sm tracking-tight opacity-90 leading-relaxed font-bold">
                     <span className="vhs-text-orange mr-2 uppercase">About me :</span>
                     {DATA.profile.about}
@@ -194,7 +206,7 @@ const App: React.FC = () => {
               </div>
             </div>
 
-            <div className="w-full md:w-auto text-left md:text-right flex flex-col gap-2 shrink-0">
+            <div className="hidden md:flex w-full md:w-auto text-left md:text-right flex-col gap-2 shrink-0">
               <div className="hidden md:flex justify-end gap-2 mb-4">
                 {[...Array(6)].map((_, i) => <div key={i} className="w-10 h-1.5 bg-black/15"></div>)}
               </div>
@@ -215,7 +227,7 @@ const App: React.FC = () => {
               <button
                 key={tab.id}
                 onClick={() => setActiveSection(tab.id as any)}
-                className={`flex-1 min-w-[100px] flex flex-col md:flex-row items-center justify-center gap-2 py-4 md:py-6 mono text-[10px] md:text-sm font-black transition-all border-b-[6px] ${activeSection === tab.id
+                className={`flex-1 min-w-[80px] flex flex-col md:flex-row items-center justify-center gap-1 md:gap-2 py-3 md:py-6 mono text-[9px] md:text-sm font-black transition-all border-b-[4px] md:border-b-[6px] ${activeSection === tab.id
                   ? 'border-orange-600 text-orange-600 bg-white'
                   : 'border-transparent text-black/40 hover:text-black/70'
                   }`}
@@ -232,6 +244,37 @@ const App: React.FC = () => {
               <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 animate-in fade-in slide-in-from-bottom-4 duration-500">
                 <div className="space-y-12">
                   <section>
+                    <h3 className="mono text-sm md:text-base font-black mb-6 border-l-8 border-orange-600 pl-4 uppercase tracking-widest">Profile Abstract</h3>
+
+                    {/* Profile Photo */}
+                    <div className="mb-10 relative group px-1">
+                      <div className="aspect-[4/5] w-full max-w-[320px] mx-auto md:mx-0 border-8 border-black/10 bg-black/5 relative overflow-hidden shadow-2xl">
+                        <img
+                          src="/profile photo.JPG"
+                          alt="FARIZ JEFRI"
+                          className="w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-700"
+                        />
+                        <div className="absolute inset-0 pointer-events-none border-2 border-orange-600/30 m-1"></div>
+                        <div className="absolute top-2 right-2 bg-orange-600 px-2 py-0.5 text-[8px] mono text-white font-black">MFJ_ORIGINAL_RENDER</div>
+                      </div>
+                      <div className="mt-2 mono text-[10px] text-black/30 font-bold uppercase tracking-widest text-center md:text-left">VISUAL_ENTRY_01.JPG</div>
+                    </div>
+
+                    <div className="space-y-4 mb-10">
+                      <div className="md:hidden bg-black/5 p-5 border-l-4 border-orange-600">
+                        <div className="mono text-[10px] opacity-40 font-black mb-2 uppercase tracking-widest">ABOUT_MISSION</div>
+                        <p className="mono text-sm tracking-tight opacity-90 leading-relaxed font-bold">
+                          {DATA.profile.about}
+                        </p>
+                      </div>
+                      <div className="md:hidden bg-black/5 p-5 border-l-4 border-orange-600">
+                        <div className="mono text-[10px] opacity-40 font-black mb-2 uppercase tracking-widest">UNIT_IDENTIFIER</div>
+                        <p className="mono text-sm font-black uppercase tracking-widest">
+                          {DATA.profile.serialNo}
+                        </p>
+                      </div>
+                    </div>
+
                     <h3 className="mono text-sm md:text-base font-black mb-6 border-l-8 border-orange-600 pl-4 uppercase tracking-widest">Skills</h3>
                     <div className="grid grid-cols-1 gap-4">
                       {DATA.skills.map((skill, idx) => (

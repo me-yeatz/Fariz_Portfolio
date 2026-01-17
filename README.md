@@ -1,20 +1,78 @@
+# 📟 MFJ_SYSTEM_v4.0 | Interactive VHS Tech Portfolio
+
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+  <img width="1200" alt="Fariz Jefri Portfolio" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+  <br />
+  <p align="center">
+    <strong>A high-fidelity, interactive tech portfolio inspired by vintage VHS cassette aesthetics.</strong>
+    <br />
+    <em>Developed by Fariz Jefri</em>
+  </p>
 </div>
 
-# Run and deploy your AI Studio app
+---
 
-This contains everything you need to run your app locally.
+## 🚀 Overview
 
-View your app in AI Studio: https://ai.studio/apps/drive/1MJX90wFm_sj7NlnAh_pkGlHAnQYJkJ1E
+This project is a custom-engineered web application showcasing a professional journey ranging from **Customer Service Excellence** to **Entrepreneurship** and **Cabin Crew Operations**. The design philosophy blends 1990s analog aesthetics with modern React performance.
 
-## Run Locally
+### 📼 Key Features
 
-**Prerequisites:**  Node.js
+*   **Retro VHS Interface**: A custom design system utilizing CSS grid and glassmorphism.
+*   **Dynamic Sections**: Seamless navigation between Profile Background, Education, Working History, and References.
+*   **Mobile Optimized**: Responsive "Compact Tape" mode for seamless mobile viewing with optimized real estate.
+*   **Visual Fidelity**: High-contrast, interactive grayscale-to-color profile renders and scanline effects.
+*   **Built for Speed**: Powered by **Vite**, **React**, and **Tailwind CSS**.
 
+---
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 🛠️ Technical Stack
+
+*   **Framework**: [React 19](https://react.dev/)
+*   **Build Tool**: [Vite](https://vitejs.dev/)
+*   **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+*   **Icons**: [Lucide React](https://lucide.dev/)
+*   **Typography**: Google Fonts (Michroma, Share Tech Mono, Stardos Stencil)
+
+---
+
+## 📦 Local Installation
+
+To run this system on your local machine:
+
+1.  **Clone the Repository**:
+    ```bash
+    git clone https://github.com/me-yeatz/Fariz_Portfolio.git
+    cd Fariz_Portfolio
+    ```
+
+2.  **Install Dependencies**:
+    ```bash
+    npm install
+    ```
+
+3.  **Launch Development Server**:
+    ```bash
+    npm run dev
+    ```
+
+4.  **Access the Viewport**:
+    Open `http://localhost:3000` in your browser.
+
+---
+
+## 📂 Project Structure
+
+```text
+├── public/                # Static assets & Profile imagery
+├── App.tsx                # Main Application Logic & Data
+├── index.html             # Entry point & CSS Definitions
+├── index.tsx              # React mounting
+└── package.json           # System dependencies
+```
+
+---
+
+## ⚖️ License
+
+Developed by **Muhammad Fariz Bin Jefri**. All rights reserved. 2026.
