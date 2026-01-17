@@ -73,4 +73,4 @@ To run this system on your local machine:
 
 ## ⚖️ License
 
-Developed by **Muhammad Fariz Bin Jefri**. All rights reserved. 2026.
+Developed by **me-yeatz**. All rights reserved. 2026.
